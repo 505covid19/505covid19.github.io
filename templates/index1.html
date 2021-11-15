@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
+    <link rel="stylesheet" href="../static/css/index3.css">
+</head>
+
+<body>
+
+
+
+    <div class="column">
+        <!-- no模块制作 -->
+        <div class="no">
+            <div class="no-hd">
+                <ul>
+                    <li id="new">4371259</li>
+                    <li id="all">207998356</li>
+                </ul>
+            </div>
+            <div class="no-bd">
+                <ul>
+                    <li>全球累计死亡人数</li>
+                    <li>全球累计感染人数</li>
+                </ul>
+            </div>
+            <div>
+                <a href="index1.html">放大图</a>
+            </div>
+        </div>
+        <!-- 地图模块 -->
+        <div class="map">
+            <div class="map1"></div>
+            <div class="map2"></div>
+            <div class="map3"></div>
+            <div class="chart"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <script src="js/flexible.js"></script> -->
+    <!-- <script src="js/echarts.min.js"></script> -->
+    <!-- 先引入jquery -->
+    <!-- <script src="js/jquery.js"></script> -->
+    <!-- 必须先引入china.js 这个文件 因为中国地图需要 -->
+    <!-- <script src="js/china.js"></script> -->
+    <!-- <script src="'js/index.js"></script> -->
+    <script>
+        $(document).ready(function() {
+            var a_index = 0;
+            $("body").click(function(e) {
+                var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+                var $i = $("<span/>").text(a[a_index]);
+                a_index = (a_index + 1) % a.length;
+                var x = e.pageX,
+                    y = e.pageY;
+                $i.css({
+                    "z-index": 99999,
+                    "top": y - 20,
+                    "left": x,
+                    "position": "absolute",
+                    "font-weight": "bold",
+                    "color": "#ff6651"
+                });
+                $("body").append($i);
+                $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                }, 1500, function() {
+                    $i.remove();
+                });
+            });
+        });
+        s
+    </script>
+</body>
+
+</html>

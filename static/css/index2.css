@@ -1,0 +1,122 @@
+body {
+    /*background: url(../images/R-C.jpg)no-repeat top center;*/
+    line-height: 0.9;
+    background-attachment: fixed;
+    text-decoration: none;
+    background-color: rgb(40, 41, 42);
+}
+
+p {
+    font-size: 23px;
+    line-height: 41px;
+    color: #a6a1a1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+    display: list-item;
+    list-style-type: none;
+}
+
+#no1 {
+    height: 0px;
+    position: center;
+}
+
+#no1 p {
+    text-align: center;
+    margin: 10rem 15rem;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+#Content {
+    margin: 12rem 15rem;
+}
+
+.homePage a {
+    text-decoration: none;
+    position: fixed;
+    left: 50px;
+    top: 150px;
+    font-size: 20px;
+}
+
+.hang1 {
+    /* margin-left: 1%; */
+    /* margin-right: 1%; */
+    overflow: hidden;
+    background-color: rgb(22, 62, 95);
+    color: rgb(216, 215, 212);
+    position: fixed;
+    top: 2px;
+    width: 99%;
+    height: 50px;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+/* 文字变色 */
+
+div .box:hover {
+    background-color: rgb(85, 131, 172);
+}
+
+div .box .box1:hover {
+    color: rgb(224, 250, 111);
+}
+
+div .box .new1:hover {
+    color: rgb(224, 250, 111);
+}
+
+div .box .new2:hover {
+    color: rgb(224, 250, 111);
+}
+
+div .box .new3:hover {
+    color: rgb(224, 250, 111);
+}
+
+div .box .new4:hover {
+    color: rgb(224, 250, 111);
+}
+
+div .box .new5:hover {
+    color: rgb(224, 250, 111);
+}
+
+div .box .new6:hover {
+    color: rgb(224, 250, 111);
+}
+
+div .box .new7:hover {
+    color: rgb(224, 250, 111);
+}
+
+div .box .new8:hover {
+    color: rgb(224, 250, 111);
+}
+
+.box {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.box a {
+    /* padding: 2px 10px; */
+    height: inherit;
+    display: block;
+    width: 150px;
+    height: 50px;
+}
